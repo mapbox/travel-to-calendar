@@ -12,7 +12,7 @@ A Chrome extension that adds travel tickets to Google Calendar from GitHub.
 
 ### Setup instructions
 
-#### 1. Edit `manifest.json`
+#### 1. Edit `[manifest.json](https://github.com/mapbox/travel-to-calendar/blob/master/manifest.json)`
 
 Under _Matches_, enter the GitHub repo you want the "Add to calendar" feature.
 

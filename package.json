@@ -33,6 +33,7 @@
     "google-client-wrapper": "^1.1.0"
   },
   "devDependencies": {
+    "babelify": "^6.4.0",
     "browserify": "^11.2.0",
     "envify": "^3.4.0",
     "uglify-js": "^2.5.0"
