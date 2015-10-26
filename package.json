@@ -28,14 +28,12 @@
     "url": "https://github.com/mapbox/travel-to-calendar/issues"
   },
   "homepage": "https://github.com/mapbox/travel-to-calendar#readme",
-  "dependencies": {
-    "google-client-api": "^1.0.4",
-    "google-client-wrapper": "^1.1.0"
-  },
   "devDependencies": {
-    "babelify": "^6.4.0",
     "browserify": "^11.2.0",
     "envify": "^3.4.0",
     "uglify-js": "^2.5.0"
+  },
+  "dependencies": {
+    "moment": "^2.10.6"
   }
 }
