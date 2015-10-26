@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/mapbox/travel/*"],
-      "js": ["index.js"],
+      "js": ["bundle.js"],
       "run_at": "document_end"
     }
   ],
