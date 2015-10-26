@@ -1,0 +1,30 @@
+{
+  "name": "travel-to-calendar",
+  "version": "1.0.0",
+  "description": "A Chrome extension that adds travel tickets to Google Calendar from GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mapbox/travel-to-calendar.git"
+  },
+  "keywords": [
+    "google",
+    "github",
+    "extenstion",
+    "calendar",
+    "travel"
+  ],
+  "author": "tristen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/travel-to-calendar/issues"
+  },
+  "homepage": "https://github.com/mapbox/travel-to-calendar#readme",
+  "dependencies": {
+    "google-client-api": "^1.0.4",
+    "google-client-wrapper": "^1.1.0"
+  }
+}
