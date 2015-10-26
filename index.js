@@ -19,7 +19,7 @@ function load() {
   if (!actionHeader) {
     var travelTimeHeadline = travelTimeline.querySelector('thead tr');
     var th = document.createElement('th');
-    th.textContent = 'Add to Calendar';
+    th.textContent = 'Actions';
     th.id = 'travel-to-calendar-header';
     travelTimeHeadline.appendChild(th);
   }
@@ -33,15 +33,15 @@ function load() {
       travel.push(item.textContent);
     });
 
-    var from = moment(travel[1]).format('YYYYMMDD');
-    var to = moment(travel[2]).format('YYYYMMDD');
+    var from = moment(travel[1], 'MM/DD/YY').format('YYYYMMDD');
+    var to = moment(travel[2], 'MM/DD/YY').format('YYYYMMDD');
 
     // Compile the link based on results in the travel array.
     var href =  'https://calendar.google.com/calendar/render?';
         href += 'action=TEMPLATE';
         href += '&src=' + process.env.GOOGLE_CALENDAR_ID;
         href += '&text=' + encodeURIComponent(travel[0]) + ' in ' + encodeURIComponent(travel[3]);
-        href += '&dates=' + from + '/' + to;
+        href += '&dates=' + from + 'T000000Z/' + to + 'T000000Z';
         href += '&details=' + encodeURIComponent(travel[4]);
         href += '&location=' + encodeURIComponent(travel[3]);
 
