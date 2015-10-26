@@ -12,7 +12,8 @@ contains a markdown table that looks something like this:
 
     | Name | Start (MM/DD/YY) | End (MM/DD/YY) | Destination | Purpose of Travel|
     |---|---|---|---|---|
-    | Some name | 11/15/15 | 11/20/15 | Washington, DC | Directions Sprint |
+    | Some name | 11/15/15 | 11/20/15 | Washington, DC | Mounument gazing |
+    | Another name | 11/20/15 | 11/24/15 | San Francisco | Burrito eating |
 
 
 and creates a __Add tp Calendar__ link you can use to quickly add this table
