@@ -11,8 +11,14 @@ function load() {
   // Parse the issue contents for the first table in the comment body
   // and push the outcome into a `travel` array.
   var comment = document.querySelector('.timeline-comment-wrapper');
+  if (!comment) return;
+
   var travelTimeline = comment.querySelector('.comment-body table');
   if (!travelTimeline) return; // Bounce if a table does not exist.
+
+  // Sniff the table a little more to make sure this is a final travel ticket
+  var travelHeader = travelTimeline.querySelectorAll('th');
+  if (travelHeader.length < 5 && travelHeader[0].textContent.toLowerCase() !== 'name') return;
 
   // Add a new Column to the table with a headline
   var actionHeader = document.getElementById('travel-to-calendar-header');
